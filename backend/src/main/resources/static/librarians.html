@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Librarians</title>
+
+    <link rel="stylesheet" href="css/books.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Librarians</h1>
+
+    <div class="top-bar">
+
+        <input id="search" placeholder="Search Librarian">
+
+        <button class="add-btn"
+                onclick="openForm()">
+
+            + Add Librarian
+
+        </button>
+
+    </div>
+
+    <table>
+
+        <thead>
+
+        <tr>
+
+            <th>ID</th>
+
+            <th>Name</th>
+
+            <th>Email</th>
+
+            <th>Phone</th>
+
+            <th>Actions</th>
+
+        </tr>
+
+        </thead>
+
+        <tbody id="table">
+
+        </tbody>
+
+    </table>
+
+</div>
+
+<div class="popup" id="popup">
+
+    <div class="popup-content">
+
+        <h2>Add Librarian</h2>
+
+        <input id="name" placeholder="Name">
+
+        <input id="email" placeholder="Email">
+
+        <input id="phone" placeholder="Phone">
+
+        <input id="password"
+               placeholder="Password">
+
+        <button onclick="save()">Save</button>
+
+        <button onclick="closeForm()">Cancel</button>
+
+    </div>
+
+</div>
+<br>
+
+<h2>👨‍💼 Registered Librarians</h2>
+
+<div id="librarianCards" class="card-container">
+
+</div>
+
+<script src="js/librarians.js"></script>
+
+</body>
+</html>

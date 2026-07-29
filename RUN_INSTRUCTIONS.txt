@@ -1,0 +1,36 @@
+LIBRARY MANAGEMENT SYSTEM - RUN INSTRUCTIONS
+
+REQUIREMENTS
+1. Java JDK 17 or newer
+2. Apache Maven
+3. PostgreSQL
+
+DATABASE SETUP
+1. Create a PostgreSQL database named: Library_Management_system
+2. Set the database password before running.
+
+Windows PowerShell:
+  $env:DB_PASSWORD="your_postgresql_password"
+  mvn spring-boot:run
+
+Windows Command Prompt:
+  set DB_PASSWORD=your_postgresql_password
+  mvn spring-boot:run
+
+Git Bash:
+  export DB_PASSWORD="your_postgresql_password"
+  mvn spring-boot:run
+
+Optional environment variables:
+  DB_URL
+  DB_USERNAME
+  DB_PASSWORD
+  SERVER_PORT
+
+OPEN THE APPLICATION
+  http://localhost:8080/dashboard.html
+
+QUICK BACKEND CHECK
+  http://localhost:8080/api/books
+
+An empty database should return: []

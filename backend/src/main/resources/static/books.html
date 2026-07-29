@@ -1,0 +1,185 @@
+<!DO<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Books</title>
+
+  <link rel="stylesheet" href="css/books.css">
+</head>
+
+<body>
+
+<div class="container">
+
+  <h1>Library Books</h1>
+
+  <div class="top-bar">
+
+    <input
+            type="text"
+            id="search"
+            placeholder="Search Book">
+
+    <button onclick="openForm()" class="add-btn">
+      + Add Book
+    </button>
+
+  </div>
+
+  <table id="bookTable">
+
+    <thead>
+
+    <tr>
+
+      <th>ID</th>
+      <th>Title</th>
+      <th>Author</th>
+      <th>Category</th>
+      <th>ISBN</th>
+      <th>Status</th>
+      <th>Actions</th>
+      <th>Details</th>
+      <th>Edit</th>
+      <th>Delete</th>
+
+    </tr>
+
+    </thead>
+
+    <tbody>
+
+    </tbody>
+
+  </table>
+
+  <br><br>
+
+  <h2>📚 Featured Books in Our Library</h2>
+
+  <<h2 style="margin-top:40px;">📚 Featured Books</h2>
+
+  <div class="book-gallery">
+
+    <div class="book-card">
+      <img src="https://covers.openlibrary.org/b/isbn/9780743273565-L.jpg" alt="The Great Gatsby">
+
+      <h3>The Great Gatsby</h3>
+
+      <p><strong>Author:</strong> F. Scott Fitzgerald</p>
+
+      <p>Genre: Classic Fiction</p>
+
+      <a href="https://en.wikipedia.org/wiki/The_Great_Gatsby" target="_blank">
+        View Details
+      </a>
+    </div>
+
+    <div class="book-card">
+      <img src="https://covers.openlibrary.org/b/isbn/9780439139601-L.jpg" alt="Harry Potter">
+
+      <h3>Harry Potter</h3>
+
+      <p><strong>Author:</strong> J.K. Rowling</p>
+
+      <p>Genre: Fantasy</p>
+
+      <a href="https://en.wikipedia.org/wiki/Harry_Potter" target="_blank">
+        View Details
+      </a>
+    </div>
+
+    <div class="book-card">
+      <img src="https://covers.openlibrary.org/b/isbn/9780061120084-L.jpg" alt="To Kill a Mockingbird">
+
+      <h3>To Kill a Mockingbird</h3>
+
+      <p><strong>Author:</strong> Harper Lee</p>
+
+      <p>Genre: Fiction</p>
+
+      <a href="https://en.wikipedia.org/wiki/To_Kill_a_Mockingbird" target="_blank">
+        View Details
+      </a>
+    </div>
+
+    <div class="book-card">
+      <img src="https://covers.openlibrary.org/b/isbn/9780451524935-L.jpg" alt="1984">
+
+      <h3>1984</h3>
+
+      <p><strong>Author:</strong> George Orwell</p>
+
+      <p>Genre: Dystopian</p>
+
+      <a href="https://en.wikipedia.org/wiki/Nineteen_Eighty-Four" target="_blank">
+        View Details
+      </a>
+    </div>
+
+    <div class="book-card">
+      <img src="https://covers.openlibrary.org/b/isbn/9780547928227-L.jpg" alt="The Hobbit">
+
+      <h3>The Hobbit</h3>
+
+      <p><strong>Author:</strong> J.R.R. Tolkien</p>
+
+      <p>Genre: Adventure</p>
+
+      <a href="https://en.wikipedia.org/wiki/The_Hobbit" target="_blank">
+        View Details
+      </a>
+    </div>
+
+    <div class="book-card">
+      <img src="https://covers.openlibrary.org/b/isbn/9780141439600-L.jpg" alt="Pride and Prejudice">
+
+      <h3>Pride and Prejudice</h3>
+
+      <p><strong>Author:</strong> Jane Austen</p>
+
+      <p>Genre: Romance</p>
+
+      <a href="https://en.wikipedia.org/wiki/Pride_and_Prejudice" target="_blank">
+        View Details
+      </a>
+    </div>
+
+  </div>
+
+</div>
+
+<!-- Popup -->
+
+<div id="popup" class="popup">
+
+  <div class="popup-content">
+
+    <h2>Add Book</h2>
+
+    <input id="title" placeholder="Title">
+
+    <input id="author" placeholder="Author">
+
+    <input id="publisher" placeholder="Publisher">
+
+    <input id="category" placeholder="Category">
+
+    <input id="isbn" placeholder="ISBN">
+
+    <input id="quantity" type="number" placeholder="Quantity">
+
+    <button onclick="saveBook()">Save</button>
+
+    <button onclick="closeForm()">Cancel</button>
+
+  </div>
+
+</div>
+
+
+<script src="js/books.js"></script>
+
+</body>
+</html>
