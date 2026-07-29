@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Students</title>
+    <link rel="stylesheet" href="css/books.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Students</h1>
+
+    <div class="top-bar">
+
+        <input type="text" id="search" placeholder="Search Student">
+
+        <button class="add-btn" onclick="openForm()">
+            + Add Student
+        </button>
+
+    </div>
+
+    <table>
+
+        <thead>
+
+        <tr>
+
+            <th>ID</th>
+            <th>Student ID</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Phone</th>
+            <th>Department</th>
+            <th>Year</th>
+            <th>Actions</th>
+
+        </tr>
+
+        </thead>
+
+        <tbody id="studentTable">
+
+        </tbody>
+
+    </table>
+
+</div>
+
+<div id="popup" class="popup">
+
+    <div class="popup-content">
+
+        <h2>Add Student</h2>
+
+        <input id="studentId" placeholder="Student ID">
+
+        <input id="name" placeholder="Name">
+
+        <input id="email" placeholder="Email">
+
+        <input id="phone" placeholder="Phone">
+
+        <input id="department" placeholder="Department">
+
+        <input id="year" placeholder="Year">
+
+        <button onclick="saveStudent()">Save</button>
+
+        <button onclick="closeForm()">Cancel</button>
+
+    </div>
+
+</div>
+
+<script src="js/students.js"></script>
+
+</body>
+</html>

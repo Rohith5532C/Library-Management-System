@@ -1,0 +1,151 @@
+/* Dashboard Cards */
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:25px;
+    margin:35px 0;
+}
+
+.card{
+    position:relative;
+    overflow:hidden;
+    padding:30px 25px;
+    border-radius:20px;
+    color:#fff;
+    text-align:center;
+    box-shadow:0 12px 30px rgba(0,0,0,0.18);
+    transition:all .35s ease;
+    cursor:pointer;
+}
+
+.card::before{
+    content:"";
+    position:absolute;
+    top:-50%;
+    left:-50%;
+    width:200%;
+    height:200%;
+    background:rgba(255,255,255,0.08);
+    transform:rotate(25deg);
+    transition:.6s;
+}
+
+.card:hover::before{
+    left:100%;
+}
+
+.card:hover{
+    transform:translateY(-10px) scale(1.03);
+    box-shadow:0 20px 40px rgba(0,0,0,0.25);
+}
+
+.card h2{
+    font-size:48px;
+    margin:0;
+    font-weight:700;
+    letter-spacing:1px;
+}
+
+.card p{
+    margin-top:12px;
+    font-size:18px;
+    opacity:.95;
+    font-weight:600;
+    text-transform:uppercase;
+    letter-spacing:1px;
+}
+
+/* Gradient Colors */
+
+.blue{
+    background:linear-gradient(135deg,#4facfe,#00c6fb);
+}
+
+.green{
+    background:linear-gradient(135deg,#43e97b,#38f9d7);
+}
+
+.orange{
+    background:linear-gradient(135deg,#fa709a,#fee140);
+}
+
+.red{
+    background:linear-gradient(135deg,#ff512f,#dd2476);
+}
+
+.purple{
+    background:linear-gradient(135deg,#7f00ff,#e100ff);
+}
+body{
+    background:#f4f7fb;
+}
+
+.dashboard-card{
+    border:none;
+    border-radius:20px;
+    transition:0.3s;
+    box-shadow:0 10px 25px rgba(0,0,0,0.15);
+}
+
+.dashboard-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 18px 35px rgba(0,0,0,0.25);
+}
+
+.dashboard-card i{
+    opacity:.9;
+}
+
+.btn{
+    border-radius:30px;
+    padding:12px 25px;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.btn:hover{
+    transform:scale(1.08);
+}
+
+table{
+    border-radius:10px;
+    overflow:hidden;
+}
+body{
+    background:#0f172a;
+    color:#fff;
+}
+
+.card{
+    background:#1e293b;
+    border:1px solid rgba(255,255,255,.08);
+    border-radius:18px;
+    color:white;
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 0 30px rgba(59,130,246,.4);
+}
+
+.blue{
+    border-left:6px solid #3b82f6;
+}
+
+.green{
+    border-left:6px solid #22c55e;
+}
+
+.orange{
+    border-left:6px solid #f59e0b;
+}
+
+.red{
+    border-left:6px solid #ef4444;
+}
+
+.purple{
+    border-left:6px solid #8b5cf6;
+}

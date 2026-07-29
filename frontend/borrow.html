@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Borrow Books</title>
+
+    <link rel="stylesheet" href="css/borrow.css">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>📖 Borrow Book</h1>
+
+    <p class="subtitle">
+        Borrow books for students and manage all borrow records.
+    </p>
+
+    <div class="borrow-card">
+
+        <h2><i class="fa-solid fa-book-open-reader"></i> Borrow Details</h2>
+
+        <select id="student"></select>
+
+        <select id="book"></select>
+
+        <input type="date" id="borrowDate">
+
+        <input type="date" id="returnDate">
+
+        <button class="borrow-btn" onclick="borrowBook()">
+            <i class="fa-solid fa-handshake"></i>
+            Borrow Book
+        </button>
+
+    </div>
+
+    <div class="navigation">
+
+        <a href="dashboard.html">🏠 Dashboard</a>
+
+        <a href="books.html">📚 Books</a>
+
+        <a href="students.html">🎓 Students</a>
+
+        <a href="librarians.html">👨‍💼 Librarians</a>
+
+    </div>
+
+    <h2 class="table-title">
+        📋 Borrow Records
+    </h2>
+
+    <table>
+
+        <thead>
+
+        <tr>
+
+            <th>Student</th>
+
+            <th>Book</th>
+
+            <th>Borrow Date</th>
+
+            <th>Return Date</th>
+
+            <th>Status</th>
+
+            <th>Return</th>
+
+        </tr>
+
+        </thead>
+
+        <tbody id="records">
+
+        </tbody>
+
+    </table>
+
+</div>
+
+<script src="js/borrow.js"></script>
+
+</body>
+
+</html>
